@@ -16,12 +16,9 @@
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/sdm845-common/proprietary/bin/dpmd:system/bin/dpmd \
-    vendor/oneplus/sdm845-common/proprietary/bin/perfservice:system/bin/perfservice \
     vendor/oneplus/sdm845-common/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/oneplus/sdm845-common/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
-    vendor/oneplus/sdm845-common/proprietary/etc/init/perfservice.rc:system/etc/init/perfservice.rc \
     vendor/oneplus/sdm845-common/proprietary/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
-    vendor/oneplus/sdm845-common/proprietary/etc/perf/whitelistedapps.xml:system/etc/perf/whitelistedapps.xml \
     vendor/oneplus/sdm845-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/oneplus/sdm845-common/proprietary/etc/permissions/com.nxp.nfc.xml:system/etc/permissions/com.nxp.nfc.xml \
     vendor/oneplus/sdm845-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
@@ -63,16 +60,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sdm845-common/proprietary/lib/libdpmfdmgr.so:system/lib/libdpmfdmgr.so \
     vendor/oneplus/sdm845-common/proprietary/lib/libdpmframework.so:system/lib/libdpmframework.so \
     vendor/oneplus/sdm845-common/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
-    vendor/oneplus/sdm845-common/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
-    vendor/oneplus/sdm845-common/proprietary/lib/libqti-iopd-client_system.so:system/lib/libqti-iopd-client_system.so \
-    vendor/oneplus/sdm845-common/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
-    vendor/oneplus/sdm845-common/proprietary/lib/libqti-util_system.so:system/lib/libqti-util_system.so \
-    vendor/oneplus/sdm845-common/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
     vendor/oneplus/sdm845-common/proprietary/lib/libnxpnfc-nci.so:system/lib/libnxpnfc-nci.so \
     vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:system/lib/vendor.qti.hardware.data.latency@1.0.so \
-    vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.iop@1.0.so:system/lib/vendor.qti.hardware.iop@1.0.so \
-    vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.iop@2.0.so:system/lib/vendor.qti.hardware.iop@2.0.so \
-    vendor/oneplus/sdm845-common/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
     vendor/oneplus/sdm845-common/proprietary/lib/vendor.nxp.nxpese@1.0.so:system/lib/vendor.nxp.nxpese@1.0.so \
     vendor/oneplus/sdm845-common/proprietary/lib/vendor.nxp.nxpnfc@1.0.so:system/lib/vendor.nxp.nxpnfc@1.0.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/android.hardware.secure_element@1.0.so:system/lib64/android.hardware.secure_element@1.0.so \
@@ -93,11 +82,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sdm845-common/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
-    vendor/oneplus/sdm845-common/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
-    vendor/oneplus/sdm845-common/proprietary/lib64/libqti-iopd-client_system.so:system/lib64/libqti-iopd-client_system.so \
-    vendor/oneplus/sdm845-common/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
-    vendor/oneplus/sdm845-common/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
-    vendor/oneplus/sdm845-common/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libnxpnfc-nci.so:system/lib64/libnxpnfc-nci.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/libnxpnfc_nci_jni.so:system/lib64/libnxpnfc_nci_jni.so \
@@ -105,9 +89,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.nxp.nxpese@1.0.so:system/lib64/vendor.nxp.nxpese@1.0.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.nxp.nxpnfc@1.0.so:system/lib64/vendor.nxp.nxpnfc@1.0.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
-    vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.iop@1.0.so:system/lib64/vendor.qti.hardware.iop@1.0.so \
-    vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.iop@2.0.so:system/lib64/vendor.qti.hardware.iop@2.0.so \
-    vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.hardware.perf@1.0.so:system/lib64/vendor.qti.hardware.perf@1.0.so \
     vendor/oneplus/sdm845-common/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so
 
 PRODUCT_PACKAGES += \
@@ -121,6 +102,4 @@ PRODUCT_PACKAGES += \
     NxpSecureElement \
     dpmserviceapp \
     qcrilmsgtunnel \
-    QPerformance \
-    UxPerformance \
     dashd
